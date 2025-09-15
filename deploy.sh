@@ -1,2 +1,2 @@
-hugo
-npx pagefind --site public
+hugo build -d docs
+npx pagefind --site docs
