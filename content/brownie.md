@@ -21,4 +21,4 @@ title = 'Vegane Brownies'
 1. Bei 200°C für 40 Minuten im Backrohr backen
 
 Test Bild:
-![](/images/brownies.png)
+![](images/brownies.png)
