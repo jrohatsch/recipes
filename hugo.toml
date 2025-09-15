@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Rezepte'
 theme = 'ananke'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
