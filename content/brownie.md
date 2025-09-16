@@ -11,8 +11,10 @@ title = 'Vegane Brownies'
 **Zutaten:**
 * 3 Bananen
 * 200g Erdnussbutter
-* 4 Esslöffel Kakaopulver
+* 10g Kakaopulver
 * Schokonibs (zartbitter)
+* 20g Mandel (gerieben
+
 
 **Zubereitung**
 1. Bananen in einer Schüssel mit einer Gabel zerstampfen
