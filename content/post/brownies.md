@@ -22,4 +22,4 @@ title = 'Vegane Brownies'
 1. In eine hohe Backform gießen
 1. Bei 200°C für 40 Minuten im Backrohr backen
 
-![](/brownies.png)
+![](/recipes/brownies.png)
