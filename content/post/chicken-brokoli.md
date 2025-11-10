@@ -31,5 +31,5 @@ title = 'Hühner Brokkoli Pfanne'
 **Dauer** 45 min
 
 
-![](/recipes/chicken-brokoli.png)
+![](/recipes/chicken-brokoli.jpg)
 
