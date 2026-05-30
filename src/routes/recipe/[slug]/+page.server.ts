@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { error } from '@sveltejs/kit';
+import { markdown } from 'markdown';
 
 export async function load({ params }) {
 	const { slug } = params;
@@ -8,8 +9,7 @@ export async function load({ params }) {
 	
 	try {
 		const content = await readFile(recipePath, 'utf-8');
-		
-		// Parse frontmatter
+
 		const frontmatterMatch = content.match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
 		let title = '';
 		let date = '';
@@ -29,11 +29,12 @@ export async function load({ params }) {
 		// Extract body (everything after frontmatter)
 		const bodyStart = content.indexOf('+++', 4) + 3;
 		const body = content.substring(bodyStart).trim();
+		const htmlBody = markdown.toHTML(body);
 		
 		return {
 			title,
 			date,
-			body,
+			body: htmlBody,
 			slug
 		};
 	} catch (err) {

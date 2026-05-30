@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { page } from '$app/stores';
 	
 	interface Recipe {
 		title: string;
@@ -9,9 +8,6 @@
 		body: string;
 	}
 
-	interface FilteredRecipe extends Recipe {
-		matchingLines: string[];
-	}
 	
 	let { data } = $props();
 	const allRecipes: Recipe[] = data.recipes;
@@ -71,18 +67,18 @@
 
 <div class="container">
 	<header>
-		<h1>🍳 My Recipes</h1>
-		<p class="subtitle">A collection of favorite recipes</p>
+		<h1>Rezeptebuch</h1>
+		<p class="subtitle">Eine kleine Sammlung an Lieblingsrezepten</p>
 		
 		<div class="search-container">
 			<input
 				type="text"
 				class="search-input"
-				placeholder="Search recipes..."
+				placeholder="Rezepte durchsuchen..."
 				bind:value={searchQuery}
 				aria-label="Search recipes"
 			/>
-			<span class="search-icon">🔍</span>
+			<span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
 	</header>
 

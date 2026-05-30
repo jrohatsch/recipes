@@ -4,11 +4,13 @@ title = 'Vegane Brownies'
 +++
 
 **Unverträglichkeiten**
+
 * Laktosefrei
 * Vegan
 * Glutenfrei
 
 **Zutaten:**
+
 * 3 Bananen
 * 200g Erdnussbutter
 * 10g Kakaopulver
@@ -17,6 +19,7 @@ title = 'Vegane Brownies'
 
 
 **Zubereitung**
+
 1. Backrohr auf 200°C vorheizen
 1. Bananen in einer Schüssel mit einer Gabel zerstampfen
 1. Mit Erdnusbutter vermengen

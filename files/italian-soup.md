@@ -5,6 +5,7 @@ title = 'Italienische Hochzeitssuppe'
 
 
 **Zutaten:**
+
 * Kohlsprossen
 * Suppengemüse
     * Karotten
@@ -20,6 +21,7 @@ title = 'Italienische Hochzeitssuppe'
 
 
 **Zubereitung**
+
 1. Suppengemüse waschen und schneiden
 1. Kohlsprossen in Streifen schneiden und mit anbraten
 1. Zwiebel und Koblauch dazu geben

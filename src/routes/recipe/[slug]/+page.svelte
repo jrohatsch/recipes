@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="container">
-	<a href={base || '/'} class="back-link">← Back to Recipes</a>
+	<a href={base || '/'} class="back-link"><i class="fa-solid fa-arrow-left"></i> Zurück zu den Rezepten</a>
 	
 	<article>
 		<header>
@@ -24,16 +24,7 @@
 		</header>
 
 		<div class="recipe-content">
-			{@html data.body
-				.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-				.replace(/\* (.+)/g, '<li>$1</li>')
-				.replace(/^(\d+)\. (.+)$/gm, '<li class="ordered">$2</li>')
-				.replace(/(<li class="ordered">.+<\/li>)/s, '<ol>$1</ol>')
-				.replace(/(?<!<ol>)((<li>(?!class).+<\/li>)+)(?!<\/ol>)/s, '<ul>$1</ul>')
-				.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<figure><img src="$2" alt="$1"></figure>')
-				.replace(/^### (.+)$/gm, '<h3>$1</h3>')
-				.replace(/^## (.+)$/gm, '<h2>$1</h2>')
-				.replace(/\n/g, '<br>')}
+			{@html data.body}
 		</div>
 	</article>
 </div>
